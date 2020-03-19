@@ -32,12 +32,15 @@ stop --> forward  : if side sensor detects nearby wall and front sensor does not
 
 
 
-Installation Instructions:
-1. docker pull klavins/enviro -a
-2. run docker in respective folder
-3. make
-4. esm start
-5. esm generate mazeRobot
-6. enviro
+Installation Instructions (in bash):
+1. create MazeSolver directory 
+2. git add .
+3. git remote add origin https://github.com/dsaywers/MazeSolver.git
+4. git pull origin master
+5. docker pull klavins/enviro -a
+6. docker run -p80:80 -p8765:8765 -v //your_directory:/source -it klavins/enviro:v1.6 bash
+7. esm start (do not run esm generate as file's are already made)
+8. make
+9. enviro
 
 

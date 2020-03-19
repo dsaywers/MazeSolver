@@ -16,7 +16,6 @@ class MovingForward : public State, public AgentInterface {
     Transition to stop if:
     a) front sensor detects object in path
     b) side sensor detects opening
-
     */
         public:
         void entry(const Event& e) {
@@ -42,7 +41,6 @@ class Reverse : public State, public AgentInterface {
     Only transitions to and from stop
     Transition to stop if:
     a) robot has reversed far enough away from detected object
-
     */
 
         public:
@@ -143,7 +141,6 @@ class Rotate_CCW : public State, public AgentInterface {
         robot has rotated enough to reach desired heading
     Transition to Reverse if:
         object is too close for robot to rotate
-
     */
         public:
         void entry(const Event& e) { 
@@ -215,7 +212,6 @@ class Stop: public State, public AgentInterface {
         if object is in path
     Transition to move forward:
         if not object in path
-
     */
         public:
         void entry(const Event& e) {}
