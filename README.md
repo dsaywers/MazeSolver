@@ -15,13 +15,21 @@ a finite state machine is used with the following states:
 State transitions occur based on the following criteria:
 
 forward --> stop : if object detected
+
 stop --> turn right : if both sensor read small distances
+
 stop --> turn left : if the left sensor senses an opening
+
 turn_right --> stop : if desired orientation is met (~90 degree turn)
+
 turn_left --> stop : if desired orientation is met (~90 degree turn)
+
 turn_left or turn_right --> reverse : if robot stuck
+
 reverse--> stop : if robot is a good distance away form object
+
 stop --> forward  : if side sensor detects nearby wall and front sensor does not detect nearby object
+
 
 
 Installation Instructions:
