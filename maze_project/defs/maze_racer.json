@@ -1,5 +1,5 @@
 {
-    "name": "Wanderer",
+    "name": "MazeRacer",
     "type": "dynamic",
     "description": "Replace this string with a description",
     "shape": [
@@ -28,5 +28,5 @@
 
     ],
     "mass": 0.25,    
-    "controller": "lib/wanderer.so"
+    "controller": "lib/maze_racer.so"
 }

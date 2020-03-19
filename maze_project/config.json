@@ -10,7 +10,7 @@
 
         
         {
-            "definition": "defs/wanderer.json",
+            "definition": "defs/maze_racer.json",
             "style": { "fill": "lightgreen", "stroke": "black" },
             "position": {
                 "x": -300, 
